@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TastyBites 🍽️ - Recipe & Cooking Blog</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="Food_deep.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">TastyBites 🍽️</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="#featured-recipes">Recipes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#cooking-tips">Tips & Tricks</a></li>
+          <li class="nav-item"><a class="nav-link" href="#footer">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#footer">Contact</a></li>
+        </ul>
+        
+        <div class="d-flex flex-column flex-lg-row align-items-lg-center">
+          <form class="d-flex mb-2 mb-lg-0">
+            <input class="form-control me-2" type="search" placeholder="Search recipes...">
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+          <button class="btn btn-outline-light ms-lg-2">Submit Recipe</button>
+        </div>
+        
+      </div>
+    </div>
+</nav>
+
+
+
+  <!-- Hero Section -->
+  <section class="hero-section text-center text-white py-5">
+    <div class="container">
+      <h1 class="display-4">Find the Perfect Recipe with What You Have!</h1>
+      <p class="lead">Enter ingredients you have...</p>
+      <form class="d-flex justify-content-center">
+        <input class="form-control me-2 w-50" type="search" placeholder="e.g., chicken, tomatoes, pasta">
+        <button class="btn btn-success" type="submit">Search</button>
+      </form>
+      <a href="#" class="btn btn-primary mt-3">Explore Recipes</a>
+    </div>
+  </section>
+
+  <!-- Featured Recipes Section -->
+  <section id="featured-recipes" class="featured-recipes py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Featured Recipes</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="https://img.freepik.com/free-photo/stir-fried-curry-paste-with-bamboo-shoot-minced-pork_1150-35176.jpg?t=st=1739042515~exp=1739046115~hmac=ffdb625aeeef627c87b86539089c20ca77850485aaf5aba5013a0c5047f92fa9&w=740" class="card-img-top" alt="Recipe 1">
+
+            <div class="card-body">
+              <h5 class="card-title">Spicy Pasta</h5>
+              <p class="card-text">⭐️⭐️⭐️⭐️</p>
+              <p class="card-text hover-text">A delicious spicy pasta recipe with fresh herbs.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="https://img.freepik.com/free-photo/baked-chicken-tabaka-with-spices_1220-4968.jpg?t=st=1739042728~exp=1739046328~hmac=b5e16638cdc10219e027b2fb77c308fd234627f6855d4c6f22086fc85d2fbb6b&w=740" class="card-img-top" alt="Recipe 2">
+
+            <div class="card-body">
+              <h5 class="card-title">Grilled Chicken</h5>
+              <p class="card-text">⭐️⭐️⭐️⭐️⭐️</p>
+              <p class="card-text hover-text">Juicy grilled chicken with a tangy marinade.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="https://i0.wp.com/wellandfull.com/wp-content/uploads/2016/06/wellandfull-1-8.jpg?resize=2592%2C3888&ssl=1" class="card-img-top" alt="Recipe 3">
+
+
+
+            <div class="card-body">
+              <h5 class="card-title">Vegan Salad</h5>
+              <p class="card-text">⭐️⭐️⭐️⭐️</p>
+              <p class="card-text hover-text">A refreshing vegan salad with a zesty dressing.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Cooking Tips & Tricks -->
+  <section id="cooking-tips" class="cooking-tips py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Cooking Tips & Tricks</h2>
+      <div id="tipsCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Perfect Pasta Sauce</h5>
+                <p class="card-text">Use fresh tomatoes and simmer for 30 minutes for the best flavor.</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Fluffy Pancakes</h5>
+                <p class="card-text">Don’t overmix the batter to keep your pancakes light and fluffy.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#tipsCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#tipsCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- User Reviews & Testimonials -->
+  <section class="user-reviews py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">What Our Users Say</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body text-center">
+              <img src="user1.jpg" class="rounded-circle mb-3" alt="User 1">
+              <h5 class="card-title">John Doe</h5>
+              <p class="card-text">⭐️⭐️⭐️⭐️⭐️</p>
+              <p class="card-text">"The recipes are amazing! I’ve tried several and they all turned out great."</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body text-center">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkAJEkJQ1WumU0hXNpXdgBt9NUKc0QDVIiaw&s" class="rounded-circle mb-3" alt="User 2">
+              <h5 class="card-title">Jane Smith</h5>
+              <p class="card-text">⭐️⭐️⭐️⭐️</p>
+              <p class="card-text">"Love the tips section! It’s helped me improve my cooking skills."</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body text-center">
+              <img src="data:image/jpeg;base64,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" class="rounded-circle mb-3" alt="User 3">
+              <h5 class="card-title">Mike Johnson</h5>
+              <p class="card-text">⭐️⭐️⭐️⭐️⭐️</p>
+              <p class="card-text">"The AI recipe suggestion is a game-changer. Highly recommend!"</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Fun Food Facts Section -->
+<section class="food-facts py-5 bg-light text-center">
+  <div class="container">
+    <h2 class="mb-4">Did You Know? 🤔</h2>
+    <div class="card mx-auto p-3" style="max-width: 600px;">
+      <p class="lead">"Honey never spoils! Archaeologists have found pots of honey in ancient Egyptian tombs that are over 3,000 years old and still perfectly edible!" 🍯</p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Newsletter Subscription -->
+  <section class="newsletter py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="mb-4">Get Weekly Recipes & Tips</h2>
+      <form class="d-flex justify-content-center">
+        <input class="form-control me-2 w-50" type="email" placeholder="Enter your email">
+        <button class="btn btn-primary" type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer" class="footer py-4 bg-dark text-white">
+    <div class="container text-center">
+      <div class="mb-3">
+        <a href="#" class="text-white me-3">Facebook</a>
+        <a href="#" class="text-white me-3">Twitter</a>
+        <a href="#" class="text-white me-3">Instagram</a>
+      </div>
+      <p class="mb-0">&copy; 2023 TastyBites 🍽️. All rights reserved.</p>
+      <p><a href="#" class="text-white">Terms & Conditions</a></p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

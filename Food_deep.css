@@ -1,0 +1,100 @@
+/* Custom Styles */
+.hero-section {
+  background-image: url('https://via.placeholder.com/1500x800'); /* Replace with your food image */
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  background-color: #F9A825; /* Warm Yellow background */
+}
+
+.hover-text {
+  display: none;
+  color: #5D4037; /* Dark Brown text for hover effect */
+}
+
+.card:hover .hover-text {
+  display: block;
+}
+
+.carousel-item {
+  padding: 0 20%;
+}
+
+.card {
+  transition: transform 0.3s;
+  border-radius: 10px; /* Rounded corners for the cards */
+  border: 1px solid #ddd; /* Light border around cards */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for cards */
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.card-body {
+  background-color: #FFF8E1; /* Light Beige background for card body */
+  color: #5D4037; /* Dark Brown text for card content */
+}
+
+.card-title {
+  color: #FF6347; /* Tomato Red title */
+  font-size: 1.25rem; /* Slightly larger title */
+}
+
+.card-text {
+  color: #424242; /* Dark Gray text for description */
+}
+
+.card:hover {
+  border-color: #FF6347; /* Tomato Red border on hover */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #FF6347; /* Tomato Red arrows */
+}
+
+.carousel-inner {
+  background-color: #F5F5DC; /* Light Beige background for carousel */
+}
+
+.carousel-item {
+  border-radius: 10px;
+  background-color: #FFFFFF; /* White background for carousel items */
+}
+
+.navbar-brand{
+  font-size: 25px;
+}
+.navbar-nav .nav-item .nav-link {
+  color: white; /* Default text color */
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #f8b400; /* Change color on hover */
+  background-color: rgba(226, 217, 217, 0.1); /* Slight background change */
+  border-radius: 5px;
+  
+
+}
+
+.navbar-nav .nav-item .nav-link:active {
+  color: #ff4500; /* Change color when clicked */
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.food-facts{
+  background-color: #F9A825;
+}
+
+.card-img-top {
+  width: 100%;              /* Ensures the image stretches across the full width of the card */
+  height: auto;             /* Height adjusts to keep the aspect ratio */
+  aspect-ratio: 4 / 3;     /* Set a fixed aspect ratio (adjustable) */
+  object-fit: cover;        /* Ensures image covers the area without distortion */
+  object-position: center;  /* Centers the image if cropping happens */
+}
+html {
+  scroll-behavior: smooth;
+}
